@@ -26,6 +26,12 @@ pipeline {
              sh 'php artisan key:generate'
       }
     }
+    stage('Code Analysis') {
+  steps {
+        sh 'phploc app/ --log-csv build/logs/phploc.csv'
+
+  }
+}
         
 }
 }

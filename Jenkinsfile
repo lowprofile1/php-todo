@@ -57,7 +57,7 @@ pipeline {
     stage ('Upload Artifact to Artifactory') {
           steps {
             script { 
-                 def server = Artifactory.server 'mobat_inst'                 
+                 def server = Artifactory.server 'mobat'                 
                  def uploadSpec = """{
                     "files": [
                       {

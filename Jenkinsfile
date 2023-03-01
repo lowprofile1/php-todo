@@ -62,7 +62,7 @@ pipeline {
                     "files": [
                       {
                        "pattern": "php-todo.zip",
-                       "target": "PBL/mobat",
+                       "target": "PBL/php-todo",
                        "props": "type=zip;status=ready"
 
                        }

@@ -57,12 +57,12 @@ pipeline {
     stage ('Upload Artifact to Artifactory') {
           steps {
             script { 
-                 def server = Artifactory.server 'artifactory-server'                 
+                 def server = Artifactory.server 'mobat_inst'                 
                  def uploadSpec = """{
                     "files": [
                       {
                        "pattern": "php-todo.zip",
-                       "target": "PBL/mobat_inst",
+                       "target": "PBL/php-todo",
                        "props": "type=zip;status=ready"
 
                        }

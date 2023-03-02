@@ -54,7 +54,7 @@ pipeline {
             scannerHome = tool 'mobat'
         }
         steps {
-            withSonarQubeEnv('sonarqube') {
+            withSonarQubeEnv('mobat') {
                 sh "${scannerHome}/bin/sonar-scanner"
             }
 

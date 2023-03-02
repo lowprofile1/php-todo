@@ -51,7 +51,7 @@ pipeline {
     }
         stage('SonarQube Quality Gate') {
         environment {
-            scannerHome = tool 'SonarQube Scanner'
+            scannerHome = tool 'mobat'
         }
         steps {
             withSonarQubeEnv('sonarqube') {
